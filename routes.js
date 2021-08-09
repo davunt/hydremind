@@ -2,6 +2,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import { Icon } from 'react-native-elements';
 import { View, Text } from 'react-native';
 
 // Screens
@@ -24,9 +25,55 @@ const OnboardingStack = () => (
 );
 
 const MainTab = () => (
-  <Tab.Navigator>
-    <Tab.Screen name="Home" component={Home} />
-    <Tab.Screen name="Settings" component={Settings} />
+  <Tab.Navigator
+    tabBarOptions={{
+      showLabel: false,
+    }}
+  >
+    <Tab.Screen
+      name="Home"
+      component={Home}
+      options={{
+        // eslint-disable-next-line
+        tabBarIcon: ({ focused, color, size }) => (
+          focused
+            ? <Icon
+                name="home"
+                type='material-community'
+                color={color}
+                size={size}
+              />
+            : <Icon
+                name="home-outline"
+                type='material-community'
+                color={color}
+                size={size}
+              />
+        ),
+      }}
+    />
+    <Tab.Screen
+      name="Settings"
+      component={Settings}
+      options={{
+        // eslint-disable-next-line
+        tabBarIcon: ({ focused, color, size }) => (
+          focused
+            ? <Icon
+                name="cog"
+                type="material-community"
+                color={color}
+                size={size}
+              />
+            : <Icon
+                name="cog-outline"
+                type="material-community"
+                color={color}
+                size={size}
+              />
+        ),
+      }} 
+    />
   </Tab.Navigator>
 );
 
