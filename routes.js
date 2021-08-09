@@ -72,7 +72,7 @@ const MainTab = () => (
                 size={size}
               />
         ),
-      }} 
+      }}
     />
   </Tab.Navigator>
 );
