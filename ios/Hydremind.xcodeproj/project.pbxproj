@@ -37,6 +37,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Hydremind/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Hydremind/main.m; sourceTree = "<group>"; };
 		3FB145B6F244CA96C8DED552 /* Pods-Hydremind-HydremindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydremind-HydremindTests.release.xcconfig"; path = "Target Support Files/Pods-Hydremind-HydremindTests/Pods-Hydremind-HydremindTests.release.xcconfig"; sourceTree = "<group>"; };
+		635AF12B26C175000016329D /* Hydremind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Hydremind.entitlements; path = Hydremind/Hydremind.entitlements; sourceTree = "<group>"; };
 		739E3169AD44AFC83326255F /* libPods-Hydremind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hydremind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9F416A25C7B1E53846F5CC /* Pods-Hydremind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydremind.debug.xcconfig"; path = "Target Support Files/Pods-Hydremind/Pods-Hydremind.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Hydremind/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		13B07FAE1A68108700A75B9A /* Hydremind */ = {
 			isa = PBXGroup;
 			children = (
+				635AF12B26C175000016329D /* Hydremind.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -145,7 +147,6 @@
 				F5088C750CA50B87CF1F0F6E /* Pods-Hydremind-HydremindTests.debug.xcconfig */,
 				3FB145B6F244CA96C8DED552 /* Pods-Hydremind-HydremindTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -484,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Hydremind/Hydremind.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Hydremind/Info.plist;
@@ -510,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Hydremind/Hydremind.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Hydremind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
